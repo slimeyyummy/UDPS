@@ -11,14 +11,14 @@
 
 The **UDPS Protocol** is a modern take on reliable transport over UDP. Designed for learning, testing, and potentially secure communication, it includes:
 
-```
+
 -  3-Way Handshake
 -  Reliable, ordered packet delivery
 -  Out-of-order packet buffering
 -  Retransmission & timeout (60ms)
 -  BBR-inspired congestion control
 -  XOR encryption (im kinda sleepy so i added basic encryption im gonna add TLS and AES encryption logic tom.
-```
+
 
 
 ---
