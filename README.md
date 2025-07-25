@@ -21,7 +21,7 @@ The **UDPS Protocol** is a modern take on reliable transport over UDP. Designed 
 
 ---
 
-## 🛠 How to Build
+##  How to Build
 
 ###  Prerequisites
 
@@ -33,5 +33,12 @@ The **UDPS Protocol** is a modern take on reliable transport over UDP. Designed 
 
 ###  Linux/macOS
 
-```bash```
+```bash
 g++ udps.cpp -o udps -std=c++17 -pthread
+```
+
+### Windows
+
+```
+g++ udps.cpp -o udps.exe -std=c++17 -lws2_32 -lwsock32 -pthread
+```
