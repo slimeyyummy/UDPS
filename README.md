@@ -30,9 +30,11 @@ FIN (0x04): Finish. Used to gracefully terminate a connection.
 
 PING (0x05): Used for liveness checks and RTT measurement.
 
-HEARTBEAT (0x06): (Conceptual) For maintaining connection liveness over longer periods.
+HEARTBEAT (0x06): For maintaining connection liveness over longer periods.
 
-REKEY (0x07): (Conceptual) For re-establishing encryption keys periodically.
+REKEY (0x07): For re-establishing encryption keys periodically.
+
+FIN-ACK (0X08) : to simulate TCP-like graceful connection termination.
 ```
 
 
