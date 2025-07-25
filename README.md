@@ -19,6 +19,8 @@ The **UDPS Protocol** is a modern take on reliable transport over UDP. Designed 
 -  BBR-inspired congestion control
 -  XOR encryption (im kinda sleepy so i added basic encryption im gonna add TLS and AES encryption logic tom.
 
+## Control Flags
+
 ```
 SYN (0x01): Synchronization. Used by the client to initiate a new connection (ClientHello).
 
