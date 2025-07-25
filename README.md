@@ -19,6 +19,22 @@ The **UDPS Protocol** is a modern take on reliable transport over UDP. Designed 
 -  BBR-inspired congestion control
 -  XOR encryption (im kinda sleepy so i added basic encryption im gonna add TLS and AES encryption logic tom.
 
+```
+SYN (0x01): Synchronization. Used by the client to initiate a new connection (ClientHello).
+
+ACK (0x02): Acknowledgment. Used to confirm receipt of packets and carry acknowledgment numbers. Also used in SYN-ACK and FIN-ACK.
+
+DATA (0x03): Carries application-layer data.
+
+FIN (0x04): Finish. Used to gracefully terminate a connection.
+
+PING (0x05): Used for liveness checks and RTT measurement.
+
+HEARTBEAT (0x06): (Conceptual) For maintaining connection liveness over longer periods.
+
+REKEY (0x07): (Conceptual) For re-establishing encryption keys periodically.
+```
+
 
 
 ---
