@@ -7,7 +7,7 @@
 
 ---
 
-## 📖 Project Overview
+##  Project Overview
 
 The **UDPS Protocol** is a modern take on reliable transport over UDP. Designed for learning, testing, and potentially secure communication, it includes:
 
@@ -21,9 +21,9 @@ The **UDPS Protocol** is a modern take on reliable transport over UDP. Designed 
 
 ---
 
-## 🛠️ How to Build
+## 🛠 How to Build
 
-### 📋 Prerequisites
+###  Prerequisites
 
 - C++17 compatible compiler: GCC, Clang, or MSVC
 - Windows or Linux/macOS environment
@@ -31,7 +31,7 @@ The **UDPS Protocol** is a modern take on reliable transport over UDP. Designed 
 
 ---
 
-### 🐧 Linux/macOS
+###  Linux/macOS
 
 ```bash
 g++ udps.cpp -o udps -std=c++17 -pthread
