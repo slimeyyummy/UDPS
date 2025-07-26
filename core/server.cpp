@@ -220,9 +220,6 @@ void UDPSServer::cleanup_inactive_clients() {
 void UDPSServer::client_handler_thread(std::shared_ptr<ClientInfo> client) {
     log_message(CYAN, "Server: Started handler thread for client " + std::to_string(client->conn_id));
     while (client->is_active.load()) {
-        // This is a placeholder for per-client logic that might be needed.
-        // For now, packet handling is done in the main listener loop.
-        // Retransmissions could be handled here.
         std::this_thread::sleep_for(std::chrono::milliseconds(100));
     }
     log_message(CYAN, "Server: Handler thread for client " + std::to_string(client->conn_id) + " exiting.");
